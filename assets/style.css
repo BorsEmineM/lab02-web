@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 930px; padding: 0 20px 20px; color: #24272b; font: 16px/1.5 system-ui, sans-serif; }
+.site-header { border-bottom: 1px solid #ccd5dd; padding: 16px 0 10px; }
+.site-header p { margin: 0 0 8px; font-size: 14px; color: #4f5b66; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+a { color: #174a78; }
+nav a[aria-current="page"] { font-weight: bold; }
+h1 { font-size: 28px; line-height: 1.2; }
+h2 { font-size: 21px; margin-top: 1.4em; }
+section { margin-bottom: 28px; }
+.site-footer { border-top: 1px solid #ccd5dd; padding-top: 12px; font-size: 14px; color: #4f5b66; }
+.student { display: flow-root; }
+.student header p { margin-top: -8px; }
+.portrait { float: right; max-width: 42%; margin: 8px 0 18px 22px; }
+.portrait img { display: block; max-width: 100%; height: auto; }
+figcaption, .note { font-size: 13px; color: #4f5b66; }
+dt { font-weight: 600; }
+dd { margin: 0 0 5px; }
+address { font-style: normal; overflow-wrap: anywhere; }
+.scheme { border-collapse: collapse; table-layout: fixed; }
+.scheme td { border: 1px solid #202020; padding: 0; }
+.scheme-a { width: min(100%, 466px); }
+.scheme-a tr { height: 19px; }
+.scheme-b { width: min(100%, 320px); }
+.scheme-b tr { height: min(40px, calc((100vw - 40px) / 8)); }
+.turquoise { background: #04eaca; }
+.cream { background: #ffffce; }
+.red { background: #f21b17; }
+.blue { background: #1818ea; }
+.green { background: #22eb13; }
+.yellow { background: #fffa00; }
+.form-example { font: 16px/1.45 "Times New Roman", serif; border-bottom: 1px solid #ddd; padding-bottom: 12px; }
+.form-example h2 { color: #111; font-size: 24px; }
+.order-grid { display: grid; grid-template-columns: minmax(110px, 30%) minmax(0, 1fr); align-items: center; gap: 5px 6px; }
+.order-grid > label, .order-grid > span { text-align: right; }
+.order-grid input, .order-grid select, .site-form input, .site-form select, textarea { max-width: 100%; }
+.order-grid input:not([type="checkbox"], [type="radio"]) { width: 205px; }
+.order-grid input.address-field { width: 385px; }
+.order-grid input[type="number"] { width: 86px; }
+.order-grid input[type="checkbox"] { justify-self: start; }
+.order-grid textarea { width: min(100%, 500px); }
+.options { display: flex; gap: 4px 12px; flex-wrap: wrap; }
+.options label { white-space: nowrap; }
+.site-form { width: min(100%, 460px); }
+.site-form > label, .site-form > input, .site-form > textarea, .site-form > select { display: block; margin-bottom: 4px; }
+.site-form > textarea { width: min(100%, 345px); }
+.buttons { margin: 10px 0; }
+.form-result { display: block; color: #165638; }
+.css-example { width: min(100%, 630px); margin: 26px auto 45px; font-family: "Times New Roman", serif; line-height: 1.3; color: #000; }
+.css-example h2 { color: #800080; font-size: 23px; }
+.css-example p { margin: 18px 0; }
+.css-example a, .blue-text { color: blue; }
+.first-example { text-indent: 35px; }
+.definition { font-size: 19px; text-decoration: underline; }
+.cyan { background-color: cyan; }
+.gray { background-color: #c0c0c0; }
+.pink { background-color: magenta; }
+.sans { font-family: Arial, sans-serif; }
+.large { font-size: 1.24em; }
+.underlined { text-decoration: underline; }
+.red-text { color: red; }
+.math-table { border-collapse: collapse; border: 3px double #111; width: 100%; text-align: center; }
+.math-table caption { color: blue; font-style: italic; font-weight: bold; text-decoration: line-through; padding: 0 0 12px; }
+.math-table td, .math-table th { border: 1px solid #111; width: 20%; padding: 1px 3px; }
+.field-1 { text-align: left; font-style: italic; }
+.field-2 { background: #000; color: #fff; font: bold 18px Arial, sans-serif; }
+.field-3 { background: cyan; color: blue; font: bold 18px Arial, sans-serif; }
+.field-4 { background: #ff9ecc; text-align: left; font: italic bold 18px Arial, sans-serif; text-decoration: underline; }
+.field-5 { background: yellow; letter-spacing: 0.17em; }
+@media (max-width: 520px) {
+  .portrait { float: none; max-width: 100%; margin: 12px 0; }
+  .order-grid { grid-template-columns: 1fr; }
+  .order-grid > label, .order-grid > span { text-align: left; }
+  .math-table td, .math-table th { font-size: 13px; letter-spacing: 0; }
+}

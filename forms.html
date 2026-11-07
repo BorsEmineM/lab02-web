@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Формы | Лабораторная работа № 2</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/forms.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <p>Лабораторная работа № 2 · HTML и CSS</p>
+    <nav aria-label="Разделы сайта">
+    <a href="index.html">Обо мне</a>
+    <a href="tables.html">Таблицы</a>
+    <a href="forms.html" aria-current="page">Формы</a>
+    <a href="css-example.html">Оформление CSS</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Формы</h1>
+    <section class="form-example">
+      <h2>А. ЗАО Птицефабрика №1</h2>
+      <form id="order" method="post" action="forms.html#order">
+        <div class="order-grid">
+          <label for="surname">Фамилия</label>
+          <input id="surname" name="surname" required>
+          <label for="initials">Инициалы</label>
+          <input id="initials" name="initials" required>
+          <label for="order-password">Пароль</label>
+          <input id="order-password" name="password" type="password" required>
+          <label for="address">Адрес получателя</label>
+          <input id="address" name="address" class="address-field" required>
+          <label for="quantity">Количество</label>
+          <input id="quantity" name="quantity" type="number" min="1" step="1" required>
+          <label for="product">Тип</label>
+          <div>
+            <select id="product" name="product" aria-label="Тип яиц">
+              <option>Куриные</option><option>Перепелиные</option>
+            </select>
+            <select id="grade" name="grade" aria-label="Категория">
+              <option>Отборные</option><option>Первой категории</option><option>Второй категории</option>
+            </select>
+          </div>
+          <span id="delivery-label">Доставка</span>
+          <div role="group" aria-labelledby="delivery-label" class="options">
+            <label><input name="delivery" type="radio" value="post" required> Почтой</label>
+            <label><input name="delivery" type="radio" value="email"> Электронно</label>
+            <label><input name="delivery" type="radio" value="courier"> Курьером</label>
+          </div>
+          <label for="invoice">Требуется накладная</label>
+          <input id="invoice" name="invoice" type="checkbox" value="yes">
+          <label for="comment">Дополнительная информация</label>
+          <textarea id="comment" name="comment" rows="3"></textarea>
+        </div>
+        <p class="buttons"><button type="submit">Заказать</button> <button type="reset">Отменить</button></p>
+        <output role="status" class="form-result"></output>
+      </form>
+    </section>
+    <section class="form-example">
+      <h2>Б. Пример формы регистрации сайта</h2>
+      <form id="site-form" class="site-form" method="post" action="forms.html#site-form" enctype="multipart/form-data">
+        <label for="site-login">Логин</label>
+        <input id="site-login" name="login" required>
+        <label for="site-password">Пароль</label>
+        <input id="site-password" name="password" type="password" required>
+        <label for="site-url">URL-адрес сайта</label>
+        <input id="site-url" name="url" type="url" placeholder="http://" required>
+        <label for="site-name">Название сайта</label>
+        <input id="site-name" name="name" required>
+        <label for="description">Описание сайта</label>
+        <textarea id="description" name="description" rows="5"></textarea>
+        <label for="topic">Тема сайта</label>
+        <select id="topic" name="topic">
+          <option value="">Тема не выбрана</option>
+          <option>Образование</option><option>Технологии</option><option>Личный сайт</option>
+        </select>
+        <label for="banner">Баннер 88×31</label>
+        <input id="banner" name="banner" type="file" accept="image/*">
+        <p class="buttons"><button type="reset">Очистить</button> <button type="submit">Отправить</button></p>
+        <output role="status" class="form-result"></output>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">Учебная работа по веб-технологиям</footer>
+</body>
+</html>

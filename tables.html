@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Таблицы | Лабораторная работа № 2</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <p>Лабораторная работа № 2 · HTML и CSS</p>
+    <nav aria-label="Разделы сайта">
+    <a href="index.html">Обо мне</a>
+    <a href="tables.html" aria-current="page">Таблицы</a>
+    <a href="forms.html">Формы</a>
+    <a href="css-example.html">Оформление CSS</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Таблицы с объединёнными ячейками</h1>
+    <section>
+      <h2>Таблица А</h2>
+      <table class="scheme scheme-a" aria-label="Схема А. Пять столбцов с объединёнными ячейками">
+        <colgroup><col span="5"></colgroup>
+        <tbody>
+          <tr><td colspan="5"></td></tr>
+          <tr><td rowspan="3"></td><td></td><td rowspan="3"></td><td></td><td></td></tr>
+          <tr><td rowspan="3"></td><td rowspan="3"></td><td></td></tr>
+          <tr><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Таблица Б</h2>
+      <table class="scheme scheme-b" aria-label="Схема Б. Цветной квадрат из восьми рядов">
+        <colgroup><col span="8"></colgroup>
+        <tbody>
+          <tr><td colspan="8" class="turquoise"></td></tr>
+          <tr><td rowspan="6" class="cream"></td><td colspan="6" class="turquoise"></td><td rowspan="6" class="cream"></td></tr>
+          <tr><td rowspan="4" class="cream"></td><td colspan="4" class="turquoise"></td><td rowspan="4" class="cream"></td></tr>
+          <tr><td rowspan="2" class="cream"></td><td class="red"></td><td class="blue"></td><td rowspan="2" class="cream"></td></tr>
+          <tr><td class="green"></td><td class="yellow"></td></tr>
+          <tr><td colspan="4" class="turquoise"></td></tr>
+          <tr><td colspan="6" class="turquoise"></td></tr>
+          <tr><td colspan="8" class="turquoise"></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer class="site-footer">Учебная работа по веб-технологиям</footer>
+</body>
+</html>

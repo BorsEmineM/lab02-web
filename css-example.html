@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Таблицы в HTML | Лабораторная работа № 2</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    #table-heading { color: blue; text-align: center; }
+    #table-heading span { letter-spacing: 0.27em; }
+    .right-example, .table-number { text-align: right; }
+    .center-example { text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <p>Лабораторная работа № 2 · HTML и CSS</p>
+    <nav aria-label="Разделы сайта">
+    <a href="index.html">Обо мне</a>
+    <a href="tables.html">Таблицы</a>
+    <a href="forms.html">Формы</a>
+    <a href="css-example.html" aria-current="page">Оформление CSS</a>
+    </nav>
+  </header>
+  <main>
+    <article class="css-example">
+      <h1 id="table-heading"><span>Таблицы</span> в HTML</h1>
+      <p class="first-example"><span class="cyan">Одним из наиболее мощных и широко применяемых в
+        <strong class="sans">HTML</strong> средств являются <em class="large sans">таблицы</em>.</span></p>
+      <p class="right-example"><span class="definition" style="background-color: #ffff00">Понятие табличного представления данных не нуждается в дополнительном пояснении.</span>
+        <span class="gray sans">В HTML таблицы используются не только традиционно, как метод представления данных, но и как средство форматирования Web-страниц.</span></p>
+      <h2>Создание простейших HTML-таблиц</h2>
+      <p class="sans"><strong class="large pink"><em>Описание</em></strong> <em class="underlined">таблиц</em>
+        <span class="underlined">должно</span> располагаться внутри раздела документа &lt;BODY&gt;.</p>
+      <p class="center-example sans">Каждая <a href="tables.html">таблица</a> должна
+        <span class="large">начинаться</span> тегом &lt;TABLE&gt; и завершаться тегом &lt;/TABLE&gt;.</p>
+      <p class="center-example"><span class="gray"><em class="blue-text"><strong>Каждая</strong></em> строка начинается тегом &lt;TR&gt; (Table Row)
+        и завершается тегом &lt;/TR&gt;. <em class="red-text"><strong>Отдельная</strong></em> ячейка в строке обрамляется парой тегов
+        &lt;TD&gt; и &lt;/TD&gt; (Table Data) или &lt;TH&gt; и &lt;/TH&gt; (Table Header).</span></p>
+      <p class="table-number"><strong>Таблица 1</strong></p>
+      <table class="math-table">
+        <caption>Математические выражения</caption>
+        <thead><tr>
+          <th scope="col" class="field-1">Поле1</th><th scope="col" class="field-2">Поле 2</th>
+          <th scope="col" class="field-3">Поле 3</th><th scope="col" class="field-4">Поле 4</th><th scope="col" class="field-5">Поле 5</th>
+        </tr></thead>
+        <tbody><tr>
+          <td class="blue-text">(a+b)<sup>2</sup></td><td>a<sup>2</sup>-b<sup>2</sup></td>
+          <td class="blue-text">(a-b)<sup>3</sup></td><td>A<sub>1</sub>+A<sub>2</sub>+…+A<sub>i</sub></td><td class="blue-text">y=x<sup>2</sup></td>
+        </tr></tbody>
+      </table>
+    </article>
+  </main>
+  <footer class="site-footer">Учебная работа по веб-технологиям</footer>
+</body>
+</html>

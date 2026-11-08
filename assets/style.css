@@ -12,7 +12,7 @@ section { margin-bottom: 28px; }
 .student { display: flow-root; }
 .student header p { margin-top: -8px; }
 .portrait { float: right; max-width: 42%; margin: 8px 0 18px 22px; }
-.portrait img { display: block; max-width: 100%; height: auto; }
+.portrait img { display: block; width: 280px; max-width: 100%; height: auto; }
 figcaption, .note { font-size: 13px; color: #4f5b66; }
 dt { font-weight: 600; }
 dd { margin: 0 0 5px; }
